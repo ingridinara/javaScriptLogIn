@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!-- language -->
+<html lang="en">
+  <head>
+    <!-- character encoding -->
+    <meta charset="UTF-8" />
+    <!-- responsive for BS4.4 -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <!-- 'meta edge' para que sea compatible con IE -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- author -->
+    <meta name="author" content="Ingrid Inara" />
+    <!-- description -->
+    <meta name="description" content="bootstrap4.4 download" />
+    <!-- keywords -->
+    <meta name="keywords" content="bootstrap, bootstrap4.4, formulario de busqueda" />
+    <!-- CUSTOM CSS LINK -->
+   <!-- <link rel="stylesheet" href="./css/bootstrap.css" /> -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>VALIDACION DE FORMULARIO DE BUSQUEDA</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+  </head>
+  <body>
+    
+     <!--BUSCADOR-->
+
+    <form action="response.html"  method="post" id = "formTwoId" name="formTwoName" class="form container  mt-5 bg-primary  pt-5 pb-5 " onsubmit=" return formTwoValidation()" arial-label="search" >
+      <!-- llamas a la funcion de validacion cuando se envie el formulario, tambien tiene etiqueta de acesibilidad "arial-label"-->
+      <div class="form-group ">
+        <label for="inputEmailId" class="mb-4 ml-1"><strong>EMAIL</strong></label>
+        <input type="text" class="form-control" id="inputEmailId" name="inputEmail" placeholder="Tu email ">
+        <div class="invalid-feedback" id="emailErrorId"></div>
+      </div>
+      <div class="form-group">
+        <label for="inputPasswordId" class="mb-4 ml-1"><strong>CONTRASENA</strong></label>
+        <input type="password" class="form-control" name="inputPassword" id="inputPasswordId">
+        <div class="invalid-feedback" id="passwordErrorId"></div>
+      </div>
+      <button  type="submit" class="btn btn-secondary"><strong>BUSCAR</strong></button>
+    </form>
+    
+
+
+    <footer></footer>
+    <!-- 
+    <script src="./js/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script> -->
+    <!-- CUSTOM JS link -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
